@@ -6,7 +6,7 @@
 /**
  * free_list - frees the memory allocted to a list
  * @head: head
- * 
+ *
  *
  */
 
