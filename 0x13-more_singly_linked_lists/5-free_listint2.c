@@ -10,7 +10,7 @@ listint_t *current;
 
 if (head == NULL)
 {
-return (NULL);
+return;
 }
 
 while (*head != NULL)
