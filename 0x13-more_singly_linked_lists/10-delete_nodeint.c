@@ -24,7 +24,7 @@ free(temp);
 return (1);
 }
 current = temp;
-for (i = 0; i < index && temp != NULL; i++)
+for (i = 0; i < index - 1 && temp != NULL; i++)
 {
 if (current->next == NULL)
 {
