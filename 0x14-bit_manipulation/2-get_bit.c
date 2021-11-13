@@ -2,7 +2,8 @@
 
 /**
  * get_bit  - returns a bit at a specific index
- * @bit: the bit at the index
+ * @n: the binary number from which to index a bit
+ * @index: variable to index through n
  * Return: -1 (error), or the bit
  */
 
