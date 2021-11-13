@@ -13,7 +13,9 @@ unsigned long int bit;
 unsigned int i = 0;
 
 if (!n || !m)
+{
 return ('\0');
+}
 
 bit =  n ^ m;
 while (bit > 0)
