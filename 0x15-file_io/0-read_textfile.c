@@ -15,7 +15,7 @@ char *buffer;
 if (filename == NULL || letters == 0)
 return (0);
 
-fd = open (filename, O_RDONLY);
+fd = open(filename, O_RDONLY);
 
 if (fd == -1)
 return (0);
