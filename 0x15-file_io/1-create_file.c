@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_strlen.c"
 
 /**
  * create_file - creates a file and writes text to it
