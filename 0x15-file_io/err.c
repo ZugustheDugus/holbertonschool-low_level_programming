@@ -7,7 +7,7 @@
  * @argv: specific args
  */
 
-void err(int file_from, int file_to, char *argv)
+void err(int file_from, int file_to, char *argv[])
 {
 if (file_from == -1)
 {
