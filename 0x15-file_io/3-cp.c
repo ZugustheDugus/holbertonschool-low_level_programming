@@ -24,7 +24,7 @@ nch = 1024;
 f_f = open(argv[1], O_RDONLY);
 
 if (f_f == -1)
-errmsg(-1, 0, argv);
+err(-1, 0, argv);
 
 f_t = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 
