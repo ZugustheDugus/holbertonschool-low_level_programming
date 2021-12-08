@@ -3,7 +3,7 @@
 /**
  * add_dnodeint - Add a node to a list
  * @head: Double pointer to the head node
- * n: node
+ * @n: node
  * Return: the address of the new element, or NULL if it failed
  */
 
