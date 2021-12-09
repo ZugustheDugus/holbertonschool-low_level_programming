@@ -3,7 +3,6 @@
 /**
  * free_dlistint - frees a list of nodes
  * @head: head node
- * Return: Returns NULL after all of the nodes are freed
  */
 
 void free_dlistint(dlistint_t *head)
@@ -16,5 +15,4 @@ void free_dlistint(dlistint_t *head)
 		free(head);
 		head = newnode;
 	}
-	return;
 }
