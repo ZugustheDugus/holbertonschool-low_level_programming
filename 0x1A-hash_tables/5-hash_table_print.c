@@ -9,7 +9,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *srch;
-	int f = 1;
+	int flag = 1;
 	unsigned long int idx;
 
 	if (!ht)
@@ -21,12 +21,12 @@ void hash_table_print(const hash_table_t *ht)
 		srch = ht->array[idx];
 		while (srch != NULL)
 		{
-			if (f == 0)
+			if (flag == 0)
 				printf(", ");
 			printf("'%s': '%s'", srch->key, srch->value);
-			f = 0;
+			flag = 0;
 			srch = srch->next;
 		}
 	}
-	printf(")\n");
+	printf("}\n");
 }
