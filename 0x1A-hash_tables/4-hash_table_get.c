@@ -9,22 +9,17 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int idx = key_index((unsigned char *)key, ht->size);
+	unsigned long int idx;
 	hash_node_t *srch;
 
-	if (ht->array == NULL || ht->size == 0 || strlen(key) == 0)
+	if (!ht || !key)
 		return (NULL);
-	if (idx >= ht->size)
-		return (NULL);
-
-	if (key && ht)
+	idx = key_index((unsigned char *)key, ht->size);
+	srch = ht->array[idx];
+	for (; srch != NULL; srch = srch->next)
 	{
-		srch = ht->array[idx];
-		if (srch == NULL)
-			return (NULL);
-		while (strcmp(srch->key, key) != 0)
-			srch = srch->next;
-		return (srch->value);
+		if ((strcmp(key, srch->key)) == 0)
+			return (srch->value);
 	}
 	return (NULL);
 }
